@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigs | Chord-ially Invited</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="images/Favicon files/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/Favicon files/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/Favicon files/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/Favicon files/favicon-16x16.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo-banner.png" alt="Chord-ially Invited" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center"> 
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">The Band</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="lineupDropdown" data-bs-toggle="dropdown">The Lineup</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="vocals.html">Vocals: Em</a></li>
+                        <li><a class="dropdown-item" href="lead-guitar.html">Lead Guitar: Ollie</a></li>
+                        <li><a class="dropdown-item" href="rhythm-guitar.html">Rhythm Guitar: Craig</a></li>
+                        <li><a class="dropdown-item" href="bass.html">Bass: Richard</a></li>
+                        <li><a class="dropdown-item" href="drums.html">Drums: Bella</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="gigs.html">Live Dates</a></li>
+                <li class="nav-item"><a class="nav-link" href="setlist.html">Setlist</a></li>
+                <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Book Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container hero-section">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            
+            <h1 class="page-title" style="color: var(--primary-blue); font-weight: 800; letter-spacing: 2px;">LIVE DATES <span style="color: #333;">| 2026</span></h1>
+
+            <div class="pt-5 pb-4 text-center">
+                <h6 class="text-uppercase fw-bold mb-2" style="color: var(--logo-gold); letter-spacing: 3px;">Where to find us next</h6>
+                <h2 id="next-venue" class="display-4 fw-bold mb-1" style="color: var(--primary-blue); text-transform: uppercase;">Loading Next Gig...</h2>
+                <p id="next-date-time" class="lead text-muted mb-4"></p>
+                <div style="width: 60px; height: 4px; background: var(--logo-gold); margin: 0 auto;"></div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center mb-4">
+                <div style="flex-grow: 1; height: 1px; background: #eee; max-width: 100px;"></div>
+                <span class="mx-3 small text-muted text-uppercase fw-bold" style="letter-spacing: 2px;">Full Tour Dates Below</span>
+                <div style="flex-grow: 1; height: 1px; background: #eee; max-width: 100px;"></div>
+            </div>
+
+            <p class="lead mb-4 text-center">
+                Catch Chord-ially Invited live across Wiltshire and the Southwest. 
+                From local pub nights to summer festivals, here is where you can 
+                find us bringing the energy.
+            </p>
+
+            <div class="table-responsive">
+               <table class="table gigs-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Venue</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Info</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gigs-list">
+                        <tr>
+                            <th scope="row">Friday 28th March</th>
+                            <td>The Railway Inn</td>
+                            <td>Westbury</td>
+                            <td>9:00 PM | Free Entry</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturday 12th April</th>
+                            <td>Private Function</td>
+                            <td>Devizes</td>
+                            <td>Booking Unavailable</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturday 24th May</th>
+                            <td>Seend Beer Festival</td>
+                            <td>Seend</td>
+                            <td>Main Stage | Tickets Required</td>
+                        </tr>
+                        <tr>
+    <th scope="row">Day DDth Month</th>
+    <td>Venue Name</td>
+    <td>Town/City</td>
+    <td>Time | Extra Info</td>
+</tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-white p-5 rounded border mt-5 text-center shadow-sm">
+                <h3>Looking for a band for your event?</h3>
+                <p class="text-muted">
+                    We are currently taking bookings for Summer 2026 and 2027. 
+                    Whether it is a wedding, birthday, or pub night, we 
+                    would love to be part of it.
+                </p>
+                <div class="mt-4">
+                    <a href="contact.html" class="cta-btn">Enquire About a Booking</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <img src="images/logo-badge.png" alt="Logo" height="80" class="mb-3">
+        <div class="mb-4">
+            <a href="https://www.facebook.com/profile.php?id=61587509396329" target="_blank" class="mx-3" style="color: var(--primary-blue); font-size: 1.8rem; text-decoration: none;">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="mx-3" style="color: #E4405F; font-size: 1.8rem; text-decoration: none; opacity: 0.5;" title="Instagram Coming Soon">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+        <p class="mb-0">&copy; 2026 Chord-ially Invited. | Westbury, Wilts</p>
+        <p class="small text-muted">Professional Party & Wedding Entertainment</p>
+    </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const rows = document.querySelectorAll("#gigs-list tr");
+    const now = new Date();
+    // Set 'now' to the start of today for fair comparison
+    now.setHours(0, 0, 0, 0); 
+    
+    let nextGig = null;
+    const currentYear = now.getFullYear(); 
+
+    for (let row of rows) {
+        const dateText = row.cells[0].innerText;
+        const venue = row.cells[1].innerText;
+        const info = row.cells[3].innerText;
+
+        const dayMatch = dateText.match(/(\d+)/);
+        const monthMatch = dateText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)/);
+        
+        if (dayMatch && monthMatch) {
+            // 1. Try the gig in the current year
+            let gigDate = new Date(`${monthMatch[0]} ${dayMatch[0]}, ${currentYear}`);
+            
+            // 2. If that date has already passed, check if it's meant for next year
+            // (e.g., If today is Dec 2026 and the gig is Jan 5th, it must be Jan 2027)
+            if (gigDate < now) {
+                gigDate = new Date(`${monthMatch[0]} ${dayMatch[0]}, ${currentYear + 1}`);
+            }
+
+            // 3. If this gig is today or in the future, it's our "Next Gig"
+            if (gigDate >= now) {
+                nextGig = { venue, dateText, info };
+                break; // Stop looking after finding the first one
+            }
+        }
+    }
+
+    // Update the display
+    const venueDisplay = document.getElementById("next-venue");
+    const dateDisplay = document.getElementById("next-date-time");
+
+    if (nextGig) {
+        venueDisplay.innerText = nextGig.venue;
+        dateDisplay.innerHTML = `${nextGig.dateText} <span class="mx-2">|</span> ${nextGig.info.split('|')[0]}`;
+    } else {
+        venueDisplay.innerText = "New Dates Coming Soon!";
+        dateDisplay.innerText = "Check back for our next performance.";
+    }
+});
+</script>
+</body>
+</html>
